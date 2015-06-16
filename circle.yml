@@ -1,0 +1,8 @@
+deployment:
+    production:
+      branch: master
+      commands:
+        - git push git@git.jden.net:burningbirb.space $CIRCLE_SHA1:master
+test:
+  override:
+    - echo 'ok!'
